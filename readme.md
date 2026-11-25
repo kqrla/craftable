@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="the craftable machines" width="460">
+</p>
+
 # inkblotter
 
 > a robot that paints with real brushes and real paint, and a separate small tabletop machine that manufactures enamel-style pins on demand using uv resin. deterministic engine, no generation in the pipeline.
