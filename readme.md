@@ -1,9 +1,10 @@
-# wall-arm
+# paintistry
 
 orphan branch. the large vertical articulated arm -- pure engineering pursuit.
 
-this branch covers the wet paint side of the wall arm hardware only.
-tufting is a separate orphan branch (rug-tufting). they share the same physical arm
+paintistry is the craftable machines name for wet painting with real brushes and real paint.
+this branch covers that side of the wall arm hardware only.
+tufting (tuftistry) is a separate orphan branch (rug-tufting). they share the same physical arm
 hardware but are completely separate branches with no shared history here.
 
 the wet paint work does not solve a commercial problem. human painters are better and

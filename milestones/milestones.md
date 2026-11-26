@@ -1,4 +1,4 @@
-# milestones -- wall arm (wet paint)
+# milestones -- paintistry (wall arm wet paint)
 
 in order. each one is a gate for the next.
 tufting milestones are in the rug-tufting branch, not here.

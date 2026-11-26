@@ -1,6 +1,6 @@
-# wall arm -- large vertical articulated arm (engineering and tufting branch)
+# wall arm -- large vertical articulated arm (paintistry and tuftistry)
 
-this branch covers the large scale physical hardware: a vertical, articulated arm that moves up, down, and sideways. it does two things, on the same hardware, in two phases: tufted rugs first, wet paint second.
+this branch covers the large scale physical hardware: a vertical, articulated arm that moves up, down, and sideways. it does two things, on the same hardware, in two phases: tufted rugs first (tuftistry), wet paint second (paintistry).
 
 this used to be described as track a plus track b together. it is now understood as one of two hardware branches, distinct from the resin plotter branch (track c).
 
@@ -30,7 +30,7 @@ before this arm ever touches wet paint, it should learn to tuft yarn. same physi
 
 rug tufting works like this: backing cloth gets stretched and stapled onto a wooden frame, the frame stands upright, and a projector throws the design onto the cloth surface so the outlines are visible. a tufter traces those projected lines with a tufting gun loaded with yarn, building up pile as it goes region by region. once the design is fully tufted, the backing comes off the frame and the finished rug comes out.
 
-this is the exact setup inkblotter's wall arm targets. the projector replaces hand-drawing the design onto the backing -- the engine produces the layout, the projector displays it on the cloth, and the arm traces it with the gun instead of a human hand. the frame stays up while the arm works, then gets dismantled when the piece is done. same workflow a human tufter uses, just with the arm doing the tracing step.
+this is the exact setup craftable's wall arm targets. the projector replaces hand-drawing the design onto the backing -- the engine produces the layout, the projector displays it on the cloth, and the arm traces it with the gun instead of a human hand. the frame stays up while the arm works, then gets dismantled when the piece is done. same workflow a human tufter uses, just with the arm doing the tracing step.
 
 this maps cleanly onto what the arm already needs to do. the engine studies a design and produces an ordered set of instructions, exactly like it does for painting, except instead of stroke plans for a loaded brush, it produces traced regions for a tufting gun. no re-dip timing. no paint load decay. no bristle spring-back. no wet-on-wet bleeding. just needle depth, yarn tension, and loop height, all of which are mechanically simple and repeatable compared to a wet brush.
 
@@ -44,7 +44,7 @@ unlike large scale robot painted canvas, a tufted rug is a real object people ac
 
 the market for custom generative rugs is already proven, not hypothetical. arcade.ai raised a 25 million dollar series a doing exactly this category: an ai design chatbot generates a custom rug, and a human artisan then makes it by hand, sold through their own marketplace. that validates real paying demand for one of a kind generative rug designs.
 
-the difference is the cost structure. arcade's model has a human artisan actually making each rug, which is expensive, slow, and caps throughput by however many artisans are available. inkblotter's tufting pipeline replaces that human labor step with the robotic arm executing the engine's traced instructions directly, math, not manual craft. that means the marginal cost per rug is much lower and the pipeline can scale in a way a human-in-the-loop model structurally cannot.
+the difference is the cost structure. arcade's model has a human artisan actually making each rug, which is expensive, slow, and caps throughput by however many artisans are available. craftable's tufting pipeline replaces that human labor step with the robotic arm executing the engine's traced instructions directly, math, not manual craft. that means the marginal cost per rug is much lower and the pipeline can scale in a way a human-in-the-loop model structurally cannot.
 
 tufting also skips the layering and ordering complexity that resin curing has. it is close to the simplest version of this whole pipeline: the engine traces flat projected regions, the arm follows them with yarn, done. no order-of-operations problem, no curing steps, no drying time. cheaper and faster for the engine to plan for, and cheaper and faster for the arm to execute.
 
@@ -56,7 +56,7 @@ the sketch currently has two distinct fixed palettes it can draw from, not one c
 
 this also means nobody has to sit down and manually design every single rug. the script generates the composition, the engine turns it into tufting instructions, the arm executes it.
 
-this is also why the generative side of this is not ai art either. p5.js is a computational graphics tool, not a generative model. the sketch is deterministic code, rules, randomness seeded and controlled by the programmer, mathematical composition, not a neural network trained on other people's art and sampling from a learned distribution. nothing is generated from a prompt and nothing is trained on scraped images. every composition comes from explicit code the programmer wrote, same as a fractal generator or a physics simulation. that keeps the generative source images consistent with the rest of inkblotter's position: computation and math throughout, never a generative model anywhere in the pipeline.
+this is also why the generative side of this is not ai art either. p5.js is a computational graphics tool, not a generative model. the sketch is deterministic code, rules, randomness seeded and controlled by the programmer, mathematical composition, not a neural network trained on other people's art and sampling from a learned distribution. nothing is generated from a prompt and nothing is trained on scraped images. every composition comes from explicit code the programmer wrote, same as a fractal generator or a physics simulation. that keeps the generative source images consistent with the rest of craftable's position: computation and math throughout, never a generative model anywhere in the pipeline.
 
 ---
 
