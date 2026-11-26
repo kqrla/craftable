@@ -4,7 +4,7 @@
 
 plugs into a creator's existing storefront (shopify, squarespace, instagram shop, etc.)
 as a backend fulfillment layer. the creator keeps their storefront and their audience.
-inkblotter manufactures the physical item the moment a real paid order comes in.
+craftable manufactures the physical item the moment a real paid order comes in.
 
 ## no speculative inventory
 
@@ -13,7 +13,7 @@ traditional small-run manufacturing:
 - upfront production before any sale
 - inventory sits until it sells or gets cleared at a loss
 
-inkblotter's model removes all of that. nothing manufactured until a real paid order exists.
+craftable's model removes all of that. nothing manufactured until a real paid order exists.
 zero speculative inventory. zero clearance risk.
 
 ## why this works at pin scale
@@ -25,5 +25,5 @@ unlike larger goods where per-unit setup cost dominates.
 ## positioning
 
 this is a manufacturing backend, not a design tool and not a marketplace.
-the creator already has the audience and the storefront. inkblotter adds
+the creator already has the audience and the storefront. craftable adds
 the ability to make the physical thing without a factory minimum order.

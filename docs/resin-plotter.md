@@ -45,7 +45,7 @@ this is a backend manufacturing layer that plugs into a storefront a creator alr
 
 flow:
 
-1. artist connects their existing storefront to the inkblotter backend
+1. artist connects their existing storefront to the craftable backend
 2. artist uploads a design once
 3. a customer places a real order and pays through something like stripe connect
 4. only then does the resin plotter manufacture that one physical item, on demand
