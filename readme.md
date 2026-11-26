@@ -1,7 +1,7 @@
-# rug-tufting
+# tuftistry
 
-this branch covers everything specific to the robotic rug tufting front.
-same physical wall arm hardware as the wet paint work, but tufting comes first --
+tuftistry is the craftable machines name for robotic rug tufting. this branch covers everything specific to it.
+same physical wall arm hardware as paintistry (the wet paint work), but tufting comes first --
 mechanically simpler, no wet medium physics, genuine commercial case.
 
 ## structure

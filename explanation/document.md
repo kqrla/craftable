@@ -1,8 +1,8 @@
-# rug tufting, explained from scratch
+# tuftistry, explained from scratch
 
 this document is meant to stand on its own. you do not need to have read anything else in this repo to follow it.
 
-i'm building a machine that makes tufted rugs on demand from generated designs. it is one front of a larger project called inkblotter, which is about getting machines to make physical, handmade-looking things, but this front works as its own idea and that is how i'm explaining it here. nothing in this branch has been built yet. everything below is the plan, and the images in the hardware folder are ai-generated concept sketches of what the finished thing could look like, not photos of a real build.
+i'm building a machine that makes tufted rugs on demand from generated designs, and i call the technique tuftistry. it is one front of a larger project called craftable machines, which is about getting machines to make physical, handmade-looking things, but this front works as its own idea and that is how i'm explaining it here. nothing in this branch has been built yet. everything below is the plan, and the images in the hardware folder are ai-generated concept sketches of what the finished thing could look like, not photos of a real build.
 
 tufting is how most handmade modern rugs get made. a piece of backing cloth is stretched tight across a frame, the design is drawn or projected onto it, and a person traces the design with a tufting gun, which punches yarn through the cloth in loops. you work region by region, filling each color area with pile. when the whole design is filled, the cloth comes off the frame and gets finished into a rug. it is slow, physical work, and the person doing the tracing is most of the labor cost.
 

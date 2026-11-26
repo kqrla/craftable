@@ -1,4 +1,4 @@
-# milestones -- rug tufting
+# milestones -- tuftistry
 
 in order. each one is a gate for the next.
 

@@ -1,7 +1,7 @@
 # concept reference images
 
 all three images are ai-generated concept sketches -- gemini-generated visualizations
-of what inkblotter's rug tufting output and hardware could look like.
+of what craftable's tuftistry output and hardware could look like.
 these are not photos of a real build or a real finished rug.
 they exist to communicate the vision.
 

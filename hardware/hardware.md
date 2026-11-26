@@ -1,4 +1,4 @@
-# hardware -- rug tufting
+# hardware -- tuftistry
 
 ## frame setup
 

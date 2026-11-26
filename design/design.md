@@ -1,4 +1,4 @@
-# design -- rug tufting
+# design -- tuftistry
 
 ## generative source contract
 

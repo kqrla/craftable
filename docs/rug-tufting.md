@@ -1,4 +1,4 @@
-# rug tufting
+# tuftistry
 
 this is the second commercial front and the first milestone for the wall arm hardware. same physical arm as the wet paint work, completely different and much simpler problem.
 
@@ -6,7 +6,7 @@ this is the second commercial front and the first milestone for the wall arm har
 
 ## what it is
 
-rug tufting: backing cloth stretched and stapled onto a wooden frame, frame stands upright. a projector maps the engine's design directly onto the cloth surface -- projection mapped to the frame geometry so the layout lands correctly regardless of how the frame is positioned. the arm traces those projected regions with a tufting gun loaded with yarn, building up pile region by region. once done, the frame gets dismantled and the finished rug comes out.
+tuftistry (rug tufting): backing cloth stretched and stapled onto a wooden frame, frame stands upright. a projector maps the engine's design directly onto the cloth surface -- projection mapped to the frame geometry so the layout lands correctly regardless of how the frame is positioned. the arm traces those projected regions with a tufting gun loaded with yarn, building up pile region by region. once done, the frame gets dismantled and the finished rug comes out.
 
 the key word is projection mapping, not just "a projector." the engine's output gets mapped to the physical surface of the frame, accounting for the cloth position and geometry. this is what lets the arm trace accurately without the design distorting across the surface.
 
@@ -33,7 +33,7 @@ tufting does displace real labor. a human tufter has to trace each design by han
 
 **perceived market value:** rugs command real prices based on visible labor and material -- yarn, backing, the density of the pile. that value is not tied to the artist's name, unlike painting. a robot-tufted rug can carry the same perceived material value as a hand-tufted one.
 
-**market comparable:** arcade.ai raised a $25m series a for ai-designed custom rugs made by human artisans. that validates the demand. their cost structure still has a human artisan making each rug by hand -- expensive, slow, hard to scale. inkblotter's version replaces that labor step with the arm executing math. lower marginal cost per rug, scalable throughput, no artisan bottleneck.
+**market comparable:** arcade.ai raised a $25m series a for ai-designed custom rugs made by human artisans. that validates the demand. their cost structure still has a human artisan making each rug by hand -- expensive, slow, hard to scale. craftable's version replaces that labor step with the arm executing math. lower marginal cost per rug, scalable throughput, no artisan bottleneck.
 
 **pricing:** paintings sell for what the artist's name is worth. rugs sell for what the material and labor is visibly worth. this is a better market for a robotic output.
 
@@ -59,7 +59,7 @@ the sketch is deterministic computational code, not a trained model. three thing
 - no inference cost -- single html file, runs in browser, instant output on every refresh
 - no fine-tuning or training pipeline to maintain
 
-this is distinct from arcade.ai's pipeline, which uses an ai design chatbot (inference cost, training data, copyright exposure). inkblotter's design side has none of that.
+this is distinct from arcade.ai's pipeline, which uses an ai design chatbot (inference cost, training data, copyright exposure). craftable's design side has none of that.
 
 ---
 
