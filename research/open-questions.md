@@ -1,6 +1,6 @@
 # open questions -- things not decided yet
 
-this file tracks the major open decisions in inkblotter. update it as decisions get made.
+this file tracks the major open decisions in craftable. update it as decisions get made.
 
 ---
 
@@ -53,7 +53,7 @@ this file tracks the major open decisions in inkblotter. update it as decisions 
 
 ### color mixing
 - status: not in scope yet
-- open: does inkblotter mix paint on a palette (hard), swap to a pre-mixed well (simpler), or just use a fixed palette (v1)?
+- open: does craftable mix paint on a palette (hard), swap to a pre-mixed well (simpler), or just use a fixed palette (v1)?
 
 ---
 
@@ -72,8 +72,8 @@ this file tracks the major open decisions in inkblotter. update it as decisions 
 ## relationship to illustrace
 
 - status: settled -- 5% overlap, step-sister project
-- inkblotter might receive an image from illustrace to paint someday
-- inkblotter does not use illustrace's architecture, parameter registry, or transfer operators
+- craftable might receive an image from illustrace to paint someday
+- craftable does not use illustrace's architecture, parameter registry, or transfer operators
 - no further integration planned unless decided otherwise
 
 ---
