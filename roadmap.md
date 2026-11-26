@@ -34,7 +34,7 @@ see: `hardware/wall-arm/embroidery/embroidery.md`
 
 ---
 
-### front 2 -- tufting (second)
+### front 2 -- tuftistry, rug tufting (second)
 
 **why second:** mechanically proven (commercial robotic tufters already exist), but larger scale than embroidery and requires the physical tufting frame setup. easier than wet paint because there is no wet medium physics -- needle depth, yarn tension, and loop height are all mechanically simple and repeatable.
 
@@ -44,7 +44,7 @@ see: `hardware/wall-arm/embroidery/embroidery.md`
 
 **the generative source:** a p5.js sketch (kqrla/assets, ink.html) generates fresh voronoi compositions on every refresh from four fixed palettes. no ai, no server, no inference -- just deterministic code producing a new design each run. the engine traces the generated color regions into tufting instructions.
 
-**the commercial case:** rugs have real perceived value tied to material and labor rather than artist name. arcade.ai validated the market (raised $25m series a for ai-designed custom rugs made by human artisans). inkblotter's version removes the human artisan step and replaces it with the arm executing the engine's instructions directly -- lower marginal cost, scalable throughput.
+**the commercial case:** rugs have real perceived value tied to material and labor rather than artist name. arcade.ai validated the market (raised $25m series a for ai-designed custom rugs made by human artisans). craftable's version removes the human artisan step and replaces it with the arm executing the engine's instructions directly -- lower marginal cost, scalable throughput.
 
 milestones:
 - [ ] arm can move across the tufting frame and follow a traced region
@@ -76,7 +76,7 @@ see: `hardware/resin-plotter/resin-plotter.md`
 
 ---
 
-## engineering track: wall arm wet paint (runs in parallel, decoupled)
+## engineering track: paintistry, wall arm wet paint (runs in parallel, decoupled)
 
 wet paint painting is not commercially motivated and is not sequenced against the commercial track. it runs whenever the arm hardware exists and the engineering bandwidth is there. it exists because wet medium physics is a hard, unsolved, genuinely interesting engineering problem -- not because it will make money.
 

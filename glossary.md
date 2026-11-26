@@ -1,11 +1,17 @@
-# glossary -- terms used across inkblotter
+# glossary -- terms used across craftable
 
 ---
 
 ## project terms
 
-**inkblotter**
-the project. a physical computing robot that paints images with real brushes and real paint.
+**craftable machines**
+the project and the umbrella name for all of its machines. the repo is called craftable.
+
+**tuftistry**
+the rug tufting technique: the wall arm tufting rugs from a projection mapped design.
+
+**paintistry**
+the wet painting technique: the wall arm painting with real brushes and real paint.
 
 **the wall arm branch**
 the hardware and physical calibration side of the project. teaches the robot arm to physically paint. runs independently of the engine branch.
@@ -26,14 +32,14 @@ the database the wall arm branch builds during calibration. maps combinations of
 the part of the engine branch where the software analyzes a reference painting before planning strokes. figures out palette, regions, stroke directions, value structure, layer order.
 
 **illustrace**
-a step-sister project (by the same author) that researches how to measure and transfer visual style. approximately 5% overlap with inkblotter. inkblotter might someday receive an image from illustrace to paint.
+a step-sister project (by the same author) that researches how to measure and transfer visual style. approximately 5% overlap with craftable. craftable might someday receive an image from illustrace to paint.
 
 ---
 
 ## physical terms
 
 **wet medium physics**
-the set of phenomena that make painting with real paint fundamentally different from plotting with a pen. paint load decay, bristle deformation, wet-on-wet bleeding, re-dip variance, etc. the core unsolved problem inkblotter is addressing.
+the set of phenomena that make painting with real paint fundamentally different from plotting with a pen. paint load decay, bristle deformation, wet-on-wet bleeding, re-dip variance, etc. the core unsolved problem craftable is addressing.
 
 **paint load**
 how much paint is currently on a brush. starts high after a dip, decreases as the brush strokes across the surface.
@@ -64,7 +70,7 @@ the metal band on a paintbrush that connects the handle to the bristles. should 
 ## software and algorithm terms
 
 **crosshatch / hatching**
-a drawing technique using parallel lines to represent value (lightness/darkness). dark areas have dense lines, light areas have sparse lines. the first stroke language inkblotter's the engine branch implements.
+a drawing technique using parallel lines to represent value (lightness/darkness). dark areas have dense lines, light areas have sparse lines. the first stroke language craftable's engine branch implements.
 
 **stroke language**
 the vocabulary of marks a system knows how to make. crosshatch uses only straight lines. a full painterly stroke language would include curved strokes, tapered strokes, washes, dry-brush, etc.
@@ -73,7 +79,7 @@ the vocabulary of marks a system knows how to make. crosshatch uses only straigh
 in visual art: how light or dark something is, independent of color. in crosshatching, line density encodes value.
 
 **npr (non-photorealistic rendering)**
-the field of computer graphics focused on making images look like they were made by human hands: painterly, sketchy, illustrative. inkblotter's the engine branch draws from npr research.
+the field of computer graphics focused on making images look like they were made by human hands: painterly, sketchy, illustrative. craftable's engine branch draws from npr research.
 
 **vpype**
 an open-source python-based pen plotter path processing pipeline. a likely starting point for the crosshatch beta.

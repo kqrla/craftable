@@ -1,6 +1,6 @@
 # wet medium physics -- the core unsolved problem
 
-this is what makes inkblotter different from every pen plotter that came before it. nobody has cracked this for a painting robot yet.
+this is what makes craftable different from every pen plotter that came before it. nobody has cracked this for a painting robot yet.
 
 ---
 
@@ -99,4 +99,4 @@ the reference painting uploaded at project start (gouache landscape, pink sky, n
 - limited palette, probably 6-8 colors, good for color well setup
 - layered sky gradient, warm pink sky likely painted first, then cooler tones laid over when dry
 
-this painting style is friendly for inkblotter v1. it does not require wet-on-wet blending or fine detail, just clean region fills with flat opaque paint.
+this painting style is friendly for craftable v1. it does not require wet-on-wet blending or fine detail, just clean region fills with flat opaque paint.

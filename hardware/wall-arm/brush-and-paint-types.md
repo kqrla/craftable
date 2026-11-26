@@ -1,6 +1,6 @@
 # brush and paint types -- reference
 
-a reference for the physical materials inkblotter will eventually work with. different combinations of brush, paint, and surface behave completely differently. this doc tracks what we know and what we have tested.
+a reference for the physical materials craftable will eventually work with. different combinations of brush, paint, and surface behave completely differently. this doc tracks what we know and what we have tested.
 
 ---
 
@@ -74,7 +74,7 @@ a reference for the physical materials inkblotter will eventually work with. dif
 - re-wettable: during open time, yes. after curing, no.
 - bleed on wet: high but slow and controllable
 - robot friendliness: cleanup requires solvents, very slow feedback loop
-- notes: not recommended until inkblotter is mature.
+- notes: not recommended until craftable is mature.
 
 ---
 

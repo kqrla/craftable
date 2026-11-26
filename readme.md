@@ -2,15 +2,26 @@
   <img src="assets/logo.png" alt="the craftable machines" width="460">
 </p>
 
-# inkblotter
+# craftable machines
 
 > a robot that paints with real brushes and real paint, and a separate small tabletop machine that manufactures enamel-style pins on demand using uv resin. deterministic engine, no generation in the pipeline.
 
 ---
 
+## the names
+
+craftable machines is the name for the whole set of machines. each technique gets its own name:
+
+- **tuftistry** -- robotic rug tufting
+- **paintistry** -- wet painting with real brushes on the wall arm
+
+embroidery and the resin plotter keep their plain names for now.
+
+---
+
 ## what is this
 
-inkblotter started because i wanted a robot that could actually paint.
+craftable started because i wanted a robot that could actually paint.
 
 not plot. not draw. not stamp. paint.
 
@@ -28,18 +39,20 @@ that's the thing nobody had built yet. so that's what this is.
 
 ## what it turned into
 
-what started as one idea is now four separate pieces of work.
+what started as one idea is now several separate pieces of work.
 
 they do not share code. they mostly do not share context with each other. they live as separate orphan branches in this repo because they are genuinely different problems with different goals and different audiences:
 
 ```
 engine          -- the research brain. analyzes an image and produces physical instructions.
 browser sim     -- visualizes what the engine produced, stroke by stroke, before any hardware exists.
-wall arm        -- the big robot that physically paints with real brushes and real paint.
+tuftistry       -- the wall arm tufting rugs, with a projector mapping the design onto the cloth.
+paintistry      -- the wall arm painting with real brushes and real paint.
+embroidery      -- a small desktop machine that stitches designs through dissolvable backing.
 resin plotter   -- a small tabletop machine that manufactures enamel-style pins on demand.
 ```
 
-they are not phases of one product. they are not nested inside each other. the engine does not own the browser sim. the wall arm and the resin plotter use completely different machines.
+they are not phases of one product. they are not nested inside each other. the engine does not own the browser sim. the wall arm and the resin plotter use completely different machines. tuftistry and paintistry share one physical arm but live as separate branches.
 
 ---
 
@@ -79,7 +92,7 @@ see browser-sim.md.
 
 ---
 
-## the wall arm
+## paintistry (the wall arm)
 
 the big, ambitious, vertical robot arm.
 
@@ -96,6 +109,20 @@ none of these have the same answer as "pen up, swap pen, pen down."
 this branch is not a commercial product. it is a hard engineering problem worth pursuing for its own sake. the right audience is engineering grants and technical credibility, not investors.
 
 see wall-arm.md, wet-medium-physics.md, brush-and-paint-types.md.
+
+---
+
+## tuftistry
+
+the same wall arm, doing a much easier job first: tufting rugs.
+
+backing cloth is stretched on an upright frame. a projector maps the design onto the cloth, and the arm carries a tufting gun that traces each color region. no paint, no wet physics, just needle depth, loop height and yarn tension.
+
+this one has a real commercial case, because it replaces hand tracing and rugs are valued on material and labor rather than an artist's name. robotic tufting already exists, so the mechanism is never pitched as new. the new part is the generated design pipeline and the on-demand model around it.
+
+designs come from a small p5.js sketch that makes a new composition on every refresh. it is plain deterministic code, not ai art.
+
+see the rug-tufting branch, and explanation/document.md inside it.
 
 ---
 
@@ -134,7 +161,8 @@ each branch has a different goal and a different audience.
 
 - the engine is pure research. it should stay hardware agnostic and not carry paint physics assumptions or resin curing assumptions.
 - the browser sim is a visualization tool. it should stay free of planning logic.
-- the wall arm is an engineering pursuit, grant-shaped and credibility-shaped.
+- paintistry (the wall arm painting) is an engineering pursuit, grant-shaped and credibility-shaped.
+- tuftistry is commercial, on-demand and labor-replacing.
 - the resin plotter is a commercial product, storefront-shaped and vc-shaped.
 
 mixing them would force compromises none of them need to make.
@@ -149,7 +177,7 @@ no prompts. no generation. no reimagining.
 
 the engine studies an existing reference image to figure out how to physically recreate or manufacture it. the output is always a physical object -- real paint or real cured resin -- not a rendered image. whatever image goes in is what comes out the other end, as faithfully as the hardware allows.
 
-diffusion models given a reference image still add their own stylistic drift. the output is a new generated image inspired by the input, not a reproduction of it. inkblotter does the exact opposite. whatever goes in is exactly what gets reproduced. zero creative interpretation anywhere in the pipeline.
+diffusion models given a reference image still add their own stylistic drift. the output is a new generated image inspired by the input, not a reproduction of it. craftable does the exact opposite. whatever goes in is exactly what gets reproduced. zero creative interpretation anywhere in the pipeline.
 
 ---
 
@@ -159,6 +187,7 @@ diffusion models given a reference image still add their own stylistic drift. th
 |---|---|
 | readme.md | this file |
 | explain.md | full plain language walkthrough if you want the whole picture in one place |
+| roadmap.md | build order across all fronts |
 | engine.md | the research branch: ingestion and stroke planning |
 | browser-sim.md | the html canvas visualization, separate from the engine |
 | wall-arm.md | the large articulated arm painting branch |
@@ -176,4 +205,4 @@ diffusion models given a reference image still add their own stylistic drift. th
 
 ## relationship to illustrace
 
-illustrace is a separate project, a software research benchmark for measuring and transferring visual style in illustrations. the overlap with inkblotter is about 5%, limited to the possibility that illustrace might someday hand the engine an image to analyze. inkblotter does not use illustrace's architecture, parameters, or operators.
+illustrace is a separate project, a software research benchmark for measuring and transferring visual style in illustrations. the overlap with craftable is about 5%, limited to the possibility that illustrace might someday hand the engine an image to analyze. craftable does not use illustrace's architecture, parameters, or operators.

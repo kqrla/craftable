@@ -1,6 +1,6 @@
 # explain
 
-this file exists so you never have to go back through a chat history to understand what inkblotter is or why it works the way it does. if you read one file, read this one.
+this file exists so you never have to go back through a chat history to understand what craftable is or why it works the way it does. if you read one file, read this one.
 
 ---
 
@@ -121,15 +121,15 @@ the engine studies an existing reference image to figure out how to physically r
 
 this is the exact opposite of how diffusion models work. a diffusion model given a reference image still adds its own sampling noise and stylistic drift. the output is a new generated image inspired by the reference, not a reproduction of it. that stylistic drift is the whole mechanism -- the model is never actually trying to reproduce its input, it is generating something new.
 
-inkblotter does not do that. not in the engine, not in the browser sim, not in either hardware branch. the engine's job is to understand and reproduce, not to generate and interpret. whatever image or design is handed in is what gets made. zero creative interpretation anywhere in the pipeline.
+craftable does not do that. not in the engine, not in the browser sim, not in either hardware branch. the engine's job is to understand and reproduce, not to generate and interpret. whatever image or design is handed in is what gets made. zero creative interpretation anywhere in the pipeline.
 
-if a diffusion model was used upstream to create an image, and that image is then handed to inkblotter, inkblotter treats it as a static reference to study and physically recreate. no generation happens inside inkblotter.
+if a diffusion model was used upstream to create an image, and that image is then handed to craftable, craftable treats it as a static reference to study and physically recreate. no generation happens inside craftable.
 
 ---
 
 ## illustrace, briefly
 
-illustrace is a separate project: a software research benchmark for measuring and transferring visual style in illustrations. it overlaps with inkblotter by roughly 5%, limited to the possibility that illustrace might someday hand the engine an image to analyze. inkblotter does not use illustrace's internal architecture, its parameter registry, or its transfer operators.
+illustrace is a separate project: a software research benchmark for measuring and transferring visual style in illustrations. it overlaps with craftable by roughly 5%, limited to the possibility that illustrace might someday hand the engine an image to analyze. craftable does not use illustrace's internal architecture, its parameter registry, or its transfer operators.
 
 ---
 

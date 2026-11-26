@@ -1,10 +1,10 @@
 # for agents -- read this first
 
-if you are an ai agent being given context on inkblotter, read this file before anything else. it will save you from making the same mistakes other agents have made.
+if you are an ai agent being given context on craftable, read this file before anything else. it will save you from making the same mistakes other agents have made.
 
 ---
 
-## what inkblotter is not
+## what craftable is not
 
 - not one product. it is four separate branches of work.
 - not a digital image filter or renderer
@@ -14,9 +14,9 @@ if you are an ai agent being given context on inkblotter, read this file before 
 
 ---
 
-## what inkblotter actually is
+## what craftable actually is
 
-inkblotter is four separate orphan branches that mostly do not share code, hardware, or context with each other:
+craftable is four separate orphan branches that mostly do not share code, hardware, or context with each other:
 
 1. engine -- research branch. analyzes a reference image and figures out how to turn it into physical instructions, palette, regions, value structure, stroke direction, layer order. hardware agnostic. does not belong to either hardware branch. headless, no ui.
 
@@ -66,12 +66,12 @@ do not assume the engine's stroke plan format (see stroke-plan-format.md) works 
 
 illustrace is a separate project by the same author. it is a software research benchmark for measuring and transferring visual style in illustrations, relevant mainly to the engine branch. it has its own parameter registry, transfer operators, and stylebench evaluation framework.
 
-illustrace and inkblotter overlap by approximately 5 percent. the only realistic connection is that illustrace might someday hand the engine an image to study.
+illustrace and craftable overlap by approximately 5 percent. the only realistic connection is that illustrace might someday hand the engine an image to study.
 
 do not:
 - suggest using illustrace's parameter registry to drive the engine's stroke planning
 - propose deep api or json integration between the two projects
-- frame inkblotter as illustrace's physical twin or executor
+- frame craftable as illustrace's physical twin or executor
 
 the user has explicitly corrected this framing multiple times.
 

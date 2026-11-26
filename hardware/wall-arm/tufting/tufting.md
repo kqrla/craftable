@@ -10,7 +10,7 @@ see also: `hardware/wall-arm/wall-arm.md` for how tufting fits into the arm's tw
 
 rug tufting works like this: backing cloth gets stretched and stapled onto a wooden frame, the frame stands upright, and a projector throws the design onto the cloth surface so the outlines are visible. a tufter traces those projected lines with a tufting gun loaded with yarn, building up pile as it goes region by region. once the design is fully tufted, the backing comes off the frame and the finished rug comes out.
 
-this is the exact setup inkblotter's wall arm targets. the projector replaces hand-drawing the design onto the backing -- the engine produces the layout, the projector displays it on the cloth, and the arm traces it with the gun instead of a human hand. the frame stays up while the arm works, then gets dismantled when the piece is done. same workflow a human tufter uses, just with the arm doing the tracing step.
+this is the exact setup craftable's wall arm targets. the projector replaces hand-drawing the design onto the backing -- the engine produces the layout, the projector displays it on the cloth, and the arm traces it with the gun instead of a human hand. the frame stays up while the arm works, then gets dismantled when the piece is done. same workflow a human tufter uses, just with the arm doing the tracing step.
 
 this maps cleanly onto what the arm already needs to do. the engine studies a design and produces an ordered set of instructions, except instead of stroke plans for a loaded brush, it produces traced regions for a tufting gun. no re-dip timing. no paint load decay. no bristle spring-back. no wet-on-wet bleeding. just needle depth, yarn tension, and loop height -- all mechanically simple and repeatable compared to a wet brush.
 
@@ -58,7 +58,7 @@ tufting proves out arm motion control and engine instruction following without a
 
 rugs have real perceived value tied to material and labor rather than artist name. a painting's value leans heavily on who made it -- a robot obviously does not have a name that sells. a rug's value leans on how it looks and feels, which the arm can deliver directly.
 
-**comparable:** arcade.ai raised $25m series a for ai-designed custom rugs made by human artisans. that validates the market. the difference is cost structure -- arcade uses human artisan labor (expensive, slow, caps throughput). inkblotter's pipeline replaces that labor step with the arm executing engine instructions directly. lower marginal cost, scalable throughput, no human-in-the-loop bottleneck.
+**comparable:** arcade.ai raised $25m series a for ai-designed custom rugs made by human artisans. that validates the market. the difference is cost structure -- arcade uses human artisan labor (expensive, slow, caps throughput). craftable's pipeline replaces that labor step with the arm executing engine instructions directly. lower marginal cost, scalable throughput, no human-in-the-loop bottleneck.
 
 ---
 

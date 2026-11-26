@@ -8,7 +8,7 @@ the stroke plan is the data format that connects the engine branch (software) to
 
 the stroke plan answers: what exactly should the arm do, in what order, with what tools?
 
-it is not a rendered image. it is not gcode (though it can be translated to gcode). it is inkblotter's own intermediate representation, designed to carry enough information for physical execution including paint-specific details that gcode does not have.
+it is not a rendered image. it is not gcode (though it can be translated to gcode). it is craftable's own intermediate representation, designed to carry enough information for physical execution including paint-specific details that gcode does not have.
 
 ---
 
