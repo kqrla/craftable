@@ -1,6 +1,6 @@
 # browser sim -- live html canvas plotter simulation
 
-a browser-based simulation of the plotter drawing stroke by stroke, in real time. this is the first thing you can actually see and interact with in inkblotter.
+a browser-based simulation of the plotter drawing stroke by stroke, in real time. this is the first thing you can actually see and interact with in craftable.
 
 this is its own separate orphan branch from the engine branch. read the distinction below before assuming this is where planning logic lives.
 
@@ -36,7 +36,7 @@ the browser sim does not do anything resembling what a diffusion model does. the
 
 ```
 +------------------------------------------+
-|  inkblotter sim                           |
+|  craftable sim                            |
 |                                          |
 |  [upload image]   density: ####.. 60%   |
 |  angle: 45  crosshatch: on              |
@@ -105,7 +105,7 @@ worth studying colorwork.studio for this. it is a browser tool for charting knit
 
 flat rendered color is fine for the crosshatch beta, since it is just thin technical-pen-style lines with no material to represent. but once the sim needs to preview embroidery thread or tufting yarn, flat color will look noticeably fake next to the real material. the same approach colorwork.studio uses, photographing actual thread or yarn under controlled lighting and rendering swatches from those photographs instead of flat fills, is the right direction for those later sims. not needed for crosshatch beta v1 or v2, but should be the plan once embroidery or tufting previews are built.
 
-colorwork.studio's own rendering code is not public, their published open source license list only covers minor third party pieces like fonts, not the actual swatch renderer. per their own faq, their approach is to photograph each yarn by hand under consistent studio lighting, then render knit swatches from those photographs using traditional computer graphics techniques, running live in the browser via webgl2. since their implementation itself is not available to look at, build this with a clean room approach: study and document the observable result, what the rendered swatches look like and how they read, without referencing or copying any actual implementation, then build inkblotter's version independently from that spec.
+colorwork.studio's own rendering code is not public, their published open source license list only covers minor third party pieces like fonts, not the actual swatch renderer. per their own faq, their approach is to photograph each yarn by hand under consistent studio lighting, then render knit swatches from those photographs using traditional computer graphics techniques, running live in the browser via webgl2. since their implementation itself is not available to look at, build this with a clean room approach: study and document the observable result, what the rendered swatches look like and how they read, without referencing or copying any actual implementation, then build craftable's version independently from that spec.
 
 ### comparable projects, by tier
 
@@ -116,7 +116,7 @@ industrial / commercial tools:
 open source / hobbyist projects on github:
 - yunniko/crochet-simulator -- renders yarn live as genuine three dimensional loop-through-loop stitch tubes, computed from real stitch topology in the core logic itself, not a flat rendering-layer approximation. closest open reference for how to represent real stitch geometry rather than faking it visually.
 - hannah144/crochet-simulator -- a simpler framework for generating basic crochet structures from yarn, hook, and stitch type.
-- tylervick/graphghan (see issue 51 in that repo) -- an active, detailed discussion of exactly the hard problem this kind of sim runs into: knit and crochet stitches need genuinely different yarn geometry and cross-sections, not just different textures, citing real academic research on representing crochet as stitch meshes. worth reading in full before building inkblotter's stitch renderer.
+- tylervick/graphghan (see issue 51 in that repo) -- an active, detailed discussion of exactly the hard problem this kind of sim runs into: knit and crochet stitches need genuinely different yarn geometry and cross-sections, not just different textures, citing real academic research on representing crochet as stitch meshes. worth reading in full before building craftable's stitch renderer.
 
 academic research:
 - kuiwuchn.github.io/rtstitch -- real-time knit deformation and rendering, fiber-level yarn simulation fast enough for real-time use, with a published approach.
@@ -129,7 +129,7 @@ all of this is reference material for technique and approach only. per the clean
 
 ### comparable projects, specifically for tufting
 
-tuftnano.com -- an ai powered tufting design studio, closest direct comparable to inkblotter's tufting pipeline. it uses segment anything model to automatically isolate distinct color regions and extract the subject from a background image, then uses depth anything v2 to generate a grayscale depth map that controls pile height, white pixels map to maximum pile height around 40mm, black pixels map to flatweave around 10mm. this is a strong direct reference for the engine's color region extraction job on the tufting branch specifically. likely closed source, same clean room caution applies, study the approach and observable output, do not reference or copy any implementation.
+tuftnano.com -- an ai powered tufting design studio, closest direct comparable to craftable's tufting pipeline. it uses segment anything model to automatically isolate distinct color regions and extract the subject from a background image, then uses depth anything v2 to generate a grayscale depth map that controls pile height, white pixels map to maximum pile height around 40mm, black pixels map to flatweave around 10mm. this is a strong direct reference for the engine's color region extraction job on the tufting branch specifically. likely closed source, same clean room caution applies, study the approach and observable output, do not reference or copy any implementation.
 
 nedgraphics tuft premium -- industrial tuft cad software, newly includes a proper 3d viewer (built on their u3m file format) that previews tufted fabric fully unrolled with realistic, customizable yarn parameters from a 3d yarn library. good reference for how a mature, production grade tufting preview pipeline is structured, aimed at professional carpet manufacturers rather than hobbyists.
 
