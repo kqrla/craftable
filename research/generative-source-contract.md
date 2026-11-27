@@ -17,7 +17,7 @@ the source is fully swappable.
 ## current reference implementation
 
 kqrla/assets/ink.html -- a p5.js sketch producing perlin-distorted voronoi compositions.
-documented in detail in the rug-tufting branch under design/design.md.
+documented in detail in the tuftistry branch under design/design.md.
 this is one example of a compliant source, not the required one.
 
 ## why this matters
