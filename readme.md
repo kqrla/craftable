@@ -122,7 +122,7 @@ this one has a real commercial case, because it replaces hand tracing and rugs a
 
 designs come from a small p5.js sketch that makes a new composition on every refresh. it is plain deterministic code, not ai art.
 
-see the rug-tufting branch, and explanation/document.md inside it.
+see the tuftistry branch, and explanation/document.md inside it.
 
 ---
 
